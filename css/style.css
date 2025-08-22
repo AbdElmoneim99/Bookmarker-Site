@@ -1,0 +1,32 @@
+body {
+  background-color: antiquewhite;
+}
+
+h2 {
+  padding-top: 25px;
+  font-family: "Playwrite GB S", cursive;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+h4 {
+  padding-top: 20px;
+  color: darkseagreen;
+  font-weight: bold;
+}
+
+#sitename,
+#url {
+  color: black;
+  font-size: large;
+  font-weight: bold;
+}
+
+.sub {
+  text-align: center;
+}
+::placeholder {
+  color: gray;
+  font-weight: lighter;
+  font-size: medium;
+}

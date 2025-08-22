@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 class="text-center">Bookmarker</h2>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
+      rel="stylesheet"
+    />
+    <h4 class="text-center">
+      <i class="fa-sharp fa-solid fa-bookmark"></i> Bookmark Your Favorite Site
+      <i class="fa-sharp fa-solid fa-bookmark"></i>
+    </h4>
+    <section class="py-5">
+      <div class="container">
+        <div class="mb-4">
+          <label for="siteName" id="sitename"
+            ><h6>
+              <i class="fa-solid fa-book-journal-whills"></i> Site Name
+            </h6></label
+          >
+          <input
+            class="form-control"
+            type="text"
+            name="siteName"
+            id="siteName"
+            placeholder="Bookmark Name"
+          />
+        </div>
+        <div class="mb-4">
+          <label for="siteurl" id="url"
+            ><h6><i class="fa-sharp fa-solid fa-link"></i> Site URL</h6></label
+          >
+          <input
+            class="form-control"
+            type="text"
+            name="siteurl"
+            id="siteurl"
+            placeholder="Website URL"
+          />
+        </div>
+        <div class="sub">
+          <button type="button" class="btn btn-danger px-5" onclick="addSite()">
+            Submit
+          </button>
+        </div>
+        <table class="table mt-4 text-center table-bordered">
+          <thead>
+            <th class="bg-warning">Index</th>
+            <th class="bg-warning">Website Name</th>
+            <th class="bg-warning">Visit</th>
+            <th class="bg-warning">Delete</th>
+          </thead>
+          <tbody id="tBody"></tbody>
+        </table>
+      </div>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
